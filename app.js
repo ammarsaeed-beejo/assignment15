@@ -15,7 +15,7 @@ var p = document.getElementsByTagName('p')[2].style.color = '#985AA0'
 var add = document.getElementsByClassName('padding-10')[0].innerHTML += " <a href=>Link 7</a>"
 var add = document.getElementsByClassName('padding-10')[0].innerHTML += " <a href=>Link 1</a>"
 
-iv.parentNode.removeChild(div);
+
 
 
 
