@@ -4,17 +4,34 @@ var h = document.getElementsByTagName("h1")[0].innerHTML = "main content Here";
 
 // 2.change color
 
-var p = document.getElementsByTagName('p')[0].style.color = '#985AA0'
+const main = document.querySelector('main');
 
-var p = document.getElementsByTagName('p')[1].style.color = '#985AA0'
+for (let p = 1; p < main.children.length; p++) {
+    main.children[p].style.color = "#985AA0";
+}
 
-var p = document.getElementsByTagName('p')[2].style.color = '#985AA0'
+// 3.add ancars
 
-// 3.add 
+const a = document.querySelector('nav');
 
-var add = document.getElementsByClassName('padding-10')[0].innerHTML += " <a href=>Link 7</a>"
-var add = document.getElementsByClassName('padding-10')[0].innerHTML += " <a href=>Link 1</a>"
+const ancar1 = a.insertAdjacentHTML("afterbegin", '<a href="#">Link 1</a>');
 
+const ancar7 = a.insertAdjacentHTML("beforeend", '<a href="#">Link 7</a>');
+
+
+let aside = document.querySelector('aside');
+
+const p1 = aside.children[0];
+
+p1.innerHTML = "<h4>Title 1</h4> <p>comment 1</p>";
+
+const p2 = aside.children[1];
+
+p2.innerHTML = "<h4>Title 2</h4> <p>comment 2</p>";
+
+const p3 = aside.children[2];
+
+p3.innerHTML = "<h4>Title 3</h4> <p>comment 3</p>";
 
 
 
